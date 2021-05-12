@@ -10,15 +10,14 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+<hr />
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Notes
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### The Problem
+- The form component is reusable, but not flexible enough for different kinds of forms. 
+
+### Slots
+- A way for markup from the parent component to the child component. 
+
+If no content is passed from the parent, the child will render default content. 

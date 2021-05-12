@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <app-form>
+    <div class="help">
+      <p>This is some help text. </p>
+    </div>
+    <div class="fields">
+      <input type="text" placeholder="email">
+      <input type="text" placeholder="username">
+      <input type="password" placeholder="password">
+    </div>
+    <div class="buttons">
+      <button type="submit">Submit</button>
+    </div>
+  </app-form>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppForm from "./components/Form"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    AppForm, // prefixing the name with the word "App", because there's already an element called "form"
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
