@@ -26,3 +26,5 @@ v-slot directive is used with names assigned to slots. It can only be used on __
 
 A combination of __slots__ and __named slots__ can be used. 
 
+### Dynamic Components
+- Allow to toggle components. 

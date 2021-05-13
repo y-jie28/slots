@@ -26,18 +26,35 @@
       <button type="submit">Submit</button>
     </template>
     </app-form>
+
+    <select v-model="componentName">
+      <option value="Home">Home</option>
+      <option value="About">About</option>
+    </select>
+
+    <keep-alive> 
+      
+    </keep-alive>
+
+    <component :is="componentName"></component>
 </template>
 
 <script>
-import AppForm from "./components/Form"
+import AppForm from "./components/Form";
+import About from "./components/About";
+import Home from "./components/Home";
 
 export default {
   name: "App",
   components: {
     AppForm, // prefixing the name with the word "App", because there's already an element called "form"
+    About,
+    Home
+
   },
   data() {
     return {
+      componentName: "Home",
       help: "This is some help text. "
     }
   }
