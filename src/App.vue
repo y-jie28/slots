@@ -32,6 +32,10 @@
       <option value="About">About</option>
     </select>
 
+    <keep-alive> 
+      
+    </keep-alive>
+
     <component :is="componentName"></component>
 </template>
 

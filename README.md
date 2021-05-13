@@ -28,4 +28,3 @@ A combination of __slots__ and __named slots__ can be used.
 
 ### Dynamic Components
 - Allow to toggle components. 
-
